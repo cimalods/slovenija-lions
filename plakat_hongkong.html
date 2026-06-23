@@ -6,66 +6,53 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:#f0f0ec;display:flex;justify-content:center;align-items:flex-start;min-height:100vh;padding:2rem;font-family:'Inter',sans-serif}
-.plakat{width:210mm;min-height:297mm;background:white;box-shadow:0 8px 40px rgba(0,0,0,0.18);display:flex;flex-direction:column;position:relative;overflow:hidden}
+body{background:#f0f0ec;display:flex;justify-content:center;align-items:center;min-height:100vh;padding:2rem;font-family:'Inter',sans-serif}
+.plakat{width:210mm;background:white;box-shadow:0 8px 40px rgba(0,0,0,0.18);display:flex;flex-direction:column;overflow:hidden}
 
 /* HEADER */
-.plakat-header{background:#1a4a2e;padding:2rem 2rem 1.5rem;text-align:center;position:relative}
-.plakat-header::after{content:'';position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#c8a84b,#e8c96d,#c8a84b)}
-.p-flag{font-size:48px;margin-bottom:10px}
-.p-title{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#c8a84b;line-height:1.2;margin-bottom:6px}
-.p-subtitle{font-size:13px;color:rgba(255,255,255,0.75);font-weight:300;letter-spacing:0.05em}
-.p-lions{font-size:14px;color:rgba(255,255,255,0.9);margin-top:8px;font-weight:500}
-
-/* QR AREA */
-.qr-area{padding:1.5rem 2rem;display:flex;align-items:center;gap:1.5rem;border-bottom:1px solid #e8e8e0}
-.qr-box{background:#f8f8f4;border:2px solid #1a4a2e;border-radius:12px;padding:12px;flex-shrink:0}
-.qr-info{flex:1}
-.qr-headline{font-family:'Playfair Display',serif;font-size:18px;color:#1a4a2e;font-weight:600;margin-bottom:6px}
-.qr-headline-en{font-size:14px;color:#5a5a5a;margin-bottom:10px;font-style:italic}
-.qr-url{background:#e8f5ee;border-radius:6px;padding:6px 12px;font-size:12px;color:#1a4a2e;font-weight:600;font-family:monospace;margin-bottom:8px;display:inline-block}
-.qr-steps{font-size:12px;color:#5a5a5a;line-height:1.8}
-.qr-steps span{display:block}
-
-/* BODY */
-.plakat-body{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:0}
-.col{padding:1.25rem 1.5rem}
-.col:first-child{border-right:1px solid #e8e8e0}
-.col-title{font-family:'Playfair Display',serif;font-size:14px;color:#1a4a2e;font-weight:600;margin-bottom:0.75rem;padding-bottom:6px;border-bottom:2px solid #c8a84b;display:flex;align-items:center;gap:6px}
-.col-title-en{font-size:11px;color:#888;font-style:italic;font-family:'Inter',sans-serif;font-weight:400}
-
-/* NATURE ITEMS */
-.nat-item{display:flex;align-items:flex-start;gap:8px;margin-bottom:10px}
-.nat-icon{font-size:18px;flex-shrink:0;margin-top:1px}
-.nat-text-title{font-size:12px;font-weight:600;color:#1a4a2e}
-.nat-text-title-en{font-size:10px;color:#888;font-style:italic}
-.nat-text-desc{font-size:11px;color:#5a5a5a;line-height:1.45;margin-top:2px}
-
-/* VALUES */
-.val-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:10px}
-.val-box{background:#e8f5ee;border-radius:6px;padding:7px 8px;text-align:center}
-.val-icon{font-size:16px;margin-bottom:2px}
-.val-title{font-size:10px;font-weight:600;color:#1a4a2e}
-.val-title-en{font-size:9px;color:#5a7a5a;font-style:italic}
-
-/* CLUBS */
-.club-item{font-size:10px;color:#333;padding:3px 0;border-bottom:0.5px solid #f0f0ec;display:flex;align-items:center;gap:5px}
-.club-item:last-child{border-bottom:none}
-.club-dot{width:14px;height:14px;border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:8px;flex-shrink:0}
-.cd-lions{background:#f7f0df}
-.cd-leo{background:#ddeafb}
-
-/* FOOTER */
-.plakat-footer{background:#1a1a1a;padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
-.pf-links{display:flex;gap:12px;flex-wrap:wrap}
-.pf-link{font-size:10px;color:#c8a84b}
-.pf-motto{font-size:11px;color:rgba(255,255,255,0.6);font-style:italic}
+.plakat-header{background:#1a4a2e;padding:2.5rem 2.5rem 2rem;text-align:center;position:relative}
+.plakat-header::after{content:'';position:absolute;bottom:0;left:0;right:0;height:5px;background:linear-gradient(90deg,#c8a84b,#e8c96d,#c8a84b)}
+.p-flag{font-size:64px;margin-bottom:14px}
+.p-title{font-family:'Playfair Display',serif;font-size:36px;font-weight:700;color:#c8a84b;line-height:1.2;margin-bottom:8px}
+.p-subtitle{font-size:16px;color:rgba(255,255,255,0.75);font-weight:300;letter-spacing:0.04em;margin-bottom:12px}
+.p-lions{font-size:15px;color:rgba(255,255,255,0.9);font-weight:500}
 
 /* STATS BAR */
-.stats-bar{background:#f7f0df;padding:8px 2rem;display:flex;justify-content:center;gap:2rem;border-bottom:1px solid #e8e0c8}
+.stats-bar{background:#f7f0df;padding:14px 2.5rem;display:flex;justify-content:center;gap:3rem;border-bottom:1px solid #e8e0c8}
 .sbar-item{text-align:center}
-.sbar-num{font-size:20px;font-weight:700;color:#7a4f00}
-.sbar-lbl{font-size:9px;color:#8a6a30;text-transform:uppercase;letter-spacing:0.05em}
+.sbar-num{font-size:28px;font-weight:700;color:#7a4f00}
+.sbar-lbl{font-size:10px;color:#8a6a30;text-transform:uppercase;letter-spacing:0.06em;margin-top:2px}
+
+/* QR AREA */
+.qr-area{padding:2.5rem 3rem;display:flex;align-items:center;gap:2.5rem;border-bottom:1px solid #e8e8e0}
+.qr-box{background:#f8f8f4;border:3px solid #1a4a2e;border-radius:14px;padding:14px;flex-shrink:0}
+.qr-info{flex:1}
+.qr-headline{font-family:'Playfair Display',serif;font-size:22px;color:#1a4a2e;font-weight:600;margin-bottom:6px}
+.qr-headline-en{font-size:15px;color:#5a5a5a;margin-bottom:14px;font-style:italic}
+.qr-url{background:#e8f5ee;border-radius:8px;padding:8px 14px;font-size:13px;color:#1a4a2e;font-weight:600;font-family:monospace;margin-bottom:14px;display:inline-block}
+.qr-steps{font-size:13px;color:#444;line-height:2}
+.qr-steps span{display:block}
+.qr-arrow{font-size:22px;color:#c8a84b;margin-bottom:10px}
+
+/* VREDNOTE */
+.val-section{padding:1.75rem 3rem 1.5rem;border-bottom:1px solid #e8e8e0}
+.val-title{font-family:'Playfair Display',serif;font-size:17px;color:#1a4a2e;font-weight:600;margin-bottom:14px;text-align:center}
+.val-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.val-box{background:#e8f5ee;border-radius:8px;padding:10px 6px;text-align:center}
+.val-icon{font-size:22px;margin-bottom:5px}
+.val-t{font-size:11px;font-weight:600;color:#1a4a2e;line-height:1.3}
+.val-te{font-size:10px;color:#5a7a5a;font-style:italic;line-height:1.3;margin-top:1px}
+
+/* QUOTE */
+.quote-section{padding:1.25rem 3rem 1.5rem;background:#f8f8f4}
+.quote-text{font-family:'Playfair Display',serif;font-size:16px;color:#1a4a2e;line-height:1.7;text-align:center;font-style:italic}
+.quote-en{font-size:13px;color:#888;text-align:center;margin-top:5px;font-style:italic}
+
+/* FOOTER */
+.plakat-footer{background:#1a1a1a;padding:1rem 2.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.pf-links{display:flex;gap:16px}
+.pf-link{font-size:11px;color:#c8a84b}
+.pf-motto{font-size:11px;color:rgba(255,255,255,0.6);font-style:italic}
 
 @media print{
   body{background:white;padding:0}
@@ -84,7 +71,7 @@ body{background:#f0f0ec;display:flex;justify-content:center;align-items:flex-sta
     <div class="p-lions">🦁 Lions Clubs International · Distrikt 129 · "We Serve — Pomagamo"</div>
   </div>
 
-  <!-- STATS BAR -->
+  <!-- STATS -->
   <div class="stats-bar">
     <div class="sbar-item"><div class="sbar-num">62</div><div class="sbar-lbl">Lions klubov / clubs</div></div>
     <div class="sbar-item"><div class="sbar-num">19</div><div class="sbar-lbl">Leo klubov / clubs</div></div>
@@ -98,91 +85,35 @@ body{background:#f0f0ec;display:flex;justify-content:center;align-items:flex-sta
       <div id="qr-div"></div>
     </div>
     <div class="qr-info">
-      <div class="qr-headline">Skenirajte in odkrijte Slovenijo</div>
-      <div class="qr-headline-en">Scan and discover Slovenia</div>
+      <div class="qr-arrow">↙ Skenirajte · Scan</div>
+      <div class="qr-headline">Odkrijte Slovenijo in Lions klube</div>
+      <div class="qr-headline-en">Discover Slovenia and our Lions clubs</div>
       <div class="qr-url">lionsslovenijadistrikt129.github.io/slovenija-lions/</div>
       <div class="qr-steps">
-        <span>📱 <strong>SL:</strong> Usmerite kamero → en klik → celotna predstavitev</span>
-        <span>📱 <strong>EN:</strong> Point your camera → one click → full presentation</span>
-        <span>🌐 Slovensko &amp; English · Lions &amp; Leo klubi / clubs</span>
+        <span>📱 <strong>SL:</strong> Usmerite kamero na kodo → en klik → celotna predstavitev</span>
+        <span>📱 <strong>EN:</strong> Point your camera at the code → one click → full presentation</span>
+        <span>🌐 Slovensko / English &nbsp;·&nbsp; 🦁 Lions &amp; ⭐ Leo klubi / clubs</span>
       </div>
     </div>
   </div>
 
-  <!-- BODY -->
-  <div class="plakat-body">
-
-    <!-- LEVA KOLONA - NARAVA -->
-    <div class="col">
-      <div class="col-title">🌿 Narava &amp; Lepote <span class="col-title-en">/ Nature &amp; Beauty</span></div>
-
-      <div class="nat-item">
-        <span class="nat-icon">🏔️</span>
-        <div>
-          <div class="nat-text-title">Alpski svet <span style="font-weight:300;color:#888">/ Alpine world</span></div>
-          <div class="nat-text-desc">Triglav (2864m), Bled, Bohinj, Kranjska Gora, Logarska dolina</div>
-        </div>
-      </div>
-      <div class="nat-item">
-        <span class="nat-icon">🕳️</span>
-        <div>
-          <div class="nat-text-title">Kraški svet <span style="font-weight:300;color:#888">/ Karst underground</span></div>
-          <div class="nat-text-desc">Postojnska jama, Škocjan (UNESCO), Predjamski grad</div>
-        </div>
-      </div>
-      <div class="nat-item">
-        <span class="nat-icon">🌊</span>
-        <div>
-          <div class="nat-text-title">Jadran <span style="font-weight:300;color:#888">/ Adriatic coast</span></div>
-          <div class="nat-text-desc">Piran, Portorož, Koper — beneška arhitektura / Venetian heritage</div>
-        </div>
-      </div>
-      <div class="nat-item">
-        <span class="nat-icon">🍇</span>
-        <div>
-          <div class="nat-text-title">Vinska dediščina <span style="font-weight:300;color:#888">/ Wine heritage</span></div>
-          <div class="nat-text-desc">Najstarejša trta (400+ let) / World's oldest vine — Maribor</div>
-        </div>
-      </div>
-      <div class="nat-item">
-        <span class="nat-icon">🏰</span>
-        <div>
-          <div class="nat-text-title">Ljubljana</div>
-          <div class="nat-text-desc">Plečnikova prestolnica, grad, Tromostovje / Plečnik's capital</div>
-        </div>
-      </div>
-      <div class="nat-item">
-        <span class="nat-icon">🎭</span>
-        <div>
-          <div class="nat-text-title">Kultura <span style="font-weight:300;color:#888">/ Culture</span></div>
-          <div class="nat-text-desc">Kurentovanje (UNESCO), Idrijska čipka / Idrija lace, folklora</div>
-        </div>
-      </div>
-
-      <div style="margin-top:10px">
-        <div class="col-title">🤝 Vrednote <span class="col-title-en">/ Values</span></div>
-        <div class="val-grid">
-          <div class="val-box"><div class="val-icon">🤝</div><div class="val-title">Gostoljubnost</div><div class="val-title-en">Hospitality</div></div>
-          <div class="val-box"><div class="val-icon">🌿</div><div class="val-title">Narava</div><div class="val-title-en">Nature</div></div>
-          <div class="val-box"><div class="val-icon">👥</div><div class="val-title">Skupnost</div><div class="val-title-en">Community</div></div>
-          <div class="val-box"><div class="val-icon">🌍</div><div class="val-title">Odprtost</div><div class="val-title-en">Openness</div></div>
-        </div>
-        <div style="font-size:11px;color:#5a5a5a;font-style:italic;line-height:1.5;background:#f8f8f4;padding:8px;border-radius:6px;border-left:3px solid #2d7a4f">
-          "Majhna po površini, velika po duši."<br>
-          <span style="font-size:10px;color:#888">"Small in size, great in spirit."</span>
-        </div>
-      </div>
+  <!-- VREDNOTE -->
+  <div class="val-section">
+    <div class="val-title">🇸🇮 Slovenija — srce Evrope · Heart of Europe</div>
+    <div class="val-grid">
+      <div class="val-box"><div class="val-icon">🏔️</div><div class="val-t">Alpski svet</div><div class="val-te">Alpine world</div></div>
+      <div class="val-box"><div class="val-icon">🌊</div><div class="val-t">Jadran</div><div class="val-te">Adriatic</div></div>
+      <div class="val-box"><div class="val-icon">🕳️</div><div class="val-t">Kras (UNESCO)</div><div class="val-te">Karst caves</div></div>
+      <div class="val-box"><div class="val-icon">🤝</div><div class="val-t">Gostoljubnost</div><div class="val-te">Hospitality</div></div>
+      <div class="val-box"><div class="val-icon">🌿</div><div class="val-t">Narava</div><div class="val-te">Nature 60%</div></div>
+      <div class="val-box"><div class="val-icon">🍇</div><div class="val-t">Vinska trta</div><div class="val-te">Oldest vine</div></div>
     </div>
+  </div>
 
-    <!-- DESNA KOLONA - KLUBI -->
-    <div class="col">
-      <div class="col-title">🦁 Lions klubi <span class="col-title-en">/ Lions clubs</span></div>
-      <div id="lions-list" style="margin-bottom:10px"></div>
-
-      <div class="col-title" style="margin-top:8px">⭐ Leo klubi <span class="col-title-en">/ Leo clubs</span></div>
-      <div id="leo-list"></div>
-    </div>
-
+  <!-- QUOTE -->
+  <div class="quote-section">
+    <div class="quote-text">"V enem dnevu se kopate v Jadranu, spijete vino v Goriških Brdih in gledate sončni zahod z Bleda."</div>
+    <div class="quote-en">"In one day you can swim in the Adriatic, sip wine in Goriška Brda and watch the sunset from Bled."</div>
   </div>
 
   <!-- FOOTER -->
@@ -194,47 +125,17 @@ body{background:#f0f0ec;display:flex;justify-content:center;align-items:flex-sta
     </div>
     <div class="pf-motto">Lions International Convention · Hong Kong 2026 · Distrikt 129 🇸🇮</div>
   </div>
+
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
 new QRCode(document.getElementById('qr-div'),{
   text:'https://lionsslovenijadistrikt129.github.io/slovenija-lions/',
-  width:130, height:130,
+  width:180, height:180,
   colorDark:'#1a4a2e', colorLight:'#ffffff',
   correctLevel:QRCode.CorrectLevel.H
 });
-
-const lions = [
-  'LC Ljubljana','LC Ljubljana Barje','LC Ljubljana Emona','LC Ljubljana Forum',
-  'LC Ljubljana Iliria','LC Ljubljana Omnia','LC Ljubljana Rožnik','LC Ljubljana Tivoli',
-  'LC Ljubljana Vega','LC Ljubljana Viva','LC Adelma von Vay','LC Alma Mater Europaea',
-  'LC Domžale','LC Kamnik','LC Vrhnika','LC Kočevje','LC Bled','LC Bled Golf',
-  'LC Brnik','LC Kranj','LC Škofja Loka','LC Ankaran Istra','LC Izola Isola',
-  'LC Koper Capodistria','LC Portorož Zarja','LC Goriška','LC Nova Gorica',
-  'LC Kobarid Soča','LC Dobrovo','LC Idrija','LC Vogrsco','LC Zemono',
-  'LC Sežana','LC Postojna Proteus','LC Celje','LC Celje Keleia','LC Celje Mozaik',
-  'LC Konjice','LC Konjice Vita','LC Rogaška Slatina','LC Savinjska dolina',
-  'LC Šentjur','LC Velenje','LC Maribor','LC Maribor Piramida','LC Maribor Zarja',
-  'LC Ptuj','LC Ptuj Primus','LC Slov. Bistrica','LC Lendava Lendva','LC Ljutomer',
-  'LC Murska Sobota','LC Gornja Radgona','LC Novo Mesto','LC Trebnje','LC Ribnica',
-  'LC Podzemelj','LC Brežice','LC Krško','LC Trbovlje','LC Trbovlje Brin','LC Slovenj Gradec'
-];
-
-const leo = [
-  'Leo Ljubljana','Leo Maribor','Leo Celje','Leo Koper','Leo Kranj','Leo Nova Gorica',
-  'Leo Novo Mesto','Leo Ptuj','Leo Murska Sobota','Leo Bled','Leo Slovenj Gradec',
-  'Leo Postojna','Leo Velenje','Leo Brežice','Leo Krško','Leo Domžale',
-  'Leo Idrija','Leo Kamnik','Leo Trbovlje'
-];
-
-document.getElementById('lions-list').innerHTML = lions.map(n=>
-  `<div class="club-item"><div class="club-dot cd-lions">🦁</div>${n}</div>`
-).join('');
-
-document.getElementById('leo-list').innerHTML = leo.map(n=>
-  `<div class="club-item"><div class="club-dot cd-leo">⭐</div>${n}</div>`
-).join('');
 </script>
 </body>
 </html>
